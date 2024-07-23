@@ -18,7 +18,7 @@ import { Title } from "@/components/Title";
 import { InputField } from "@/components/Input";
 import { Botao } from "@/components/Button";
 
-export default function Login() {
+export default function Register() {
   return (
     <VStack
       flex={1}
@@ -28,7 +28,7 @@ export default function Login() {
     >
       <Image source={logoDef} alt={"logo"} />
 
-      <Title>Faça seu Login</Title>
+      <Title>Faça seu Cadastro</Title>
       <Box mt={5}>
         <FormControl mt={3}>
           <InputField placeholder="Digite seu usuário" label="Usuário" />
@@ -37,20 +37,13 @@ export default function Login() {
             label="Senha"
             secureTextEntry
           />
+          <InputField
+            placeholder="Repita sua senha"
+            label="Senha"
+            secureTextEntry
+          />
         </FormControl>
-        <Botao autoSize>Entrar</Botao>
-      </Box>
-
-      <Box mt={3}>
-        <Link href="#" textAlign="center">
-          Esqueceu sua senha?
-        </Link>
-      </Box>
-      <Box mt={8} w="100%" flexDirection="row" justifyContent="center">
-        <Text fontSize={"sm"}>Ainda não tem cadastro?</Text>
-        <TouchableOpacity>
-          <Text color={THEMES.colors.secondary}> Faça seu cadastro</Text>
-        </TouchableOpacity>
+        <Botao autoSize>Registrar</Botao>
       </Box>
     </VStack>
   );

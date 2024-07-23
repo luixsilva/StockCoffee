@@ -1,4 +1,4 @@
-import Login from "@/src/Login";
+import Register from "@/src/Register";
 
 import { NativeBaseProvider, StatusBar } from "native-base";
 
@@ -8,7 +8,7 @@ export default function HomeScreen() {
   return (
     <NativeBaseProvider theme={THEMES}>
       <StatusBar backgroundColor={THEMES.colors.secondary} />
-      <Login />
+      <Register />
     </NativeBaseProvider>
   );
 }
